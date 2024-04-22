@@ -1,20 +1,16 @@
 import { useMemo, useRef, useState } from "react";
-
 import { useRequest, useSize, } from "ahooks";
-
 import React from "react";
 import { useTitle } from "$machine/useTitle";
 import { LoaderIcon } from "react-hot-toast";
 import { merchantProfile } from "#Services";
 import { useNavigate } from "react-router-dom";
 
-
 const HaderComponent = React.memo(() => {
   const ref = useRef(null);
   const size = useSize(ref);
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const { title, icon } = useTitle((store) => store);
-
+  const { title, icon } = useTitle((store) => store); 
   const navigate = useNavigate();
   // console.log(data.getTotalCount.totalcount,userData.id,'message count')
   const titlePage = useMemo(() => {

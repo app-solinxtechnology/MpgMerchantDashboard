@@ -1,0 +1,1 @@
+import{r,_ as o}from"./index-UUOBTXoH.js";var c=function(){var e=r.useRef(!1);return r.useEffect(function(){return e.current=!1,function(){e.current=!0}},[]),e};function i(e){var u=c(),t=o(r.useState(e),2),n=t[0],a=t[1],s=r.useCallback(function(f){u.current||a(f)},[]);return[n,s]}const l=e=>{const[u,t]=i(e);return[u,t]};export{l as u};

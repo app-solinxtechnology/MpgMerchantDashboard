@@ -9,6 +9,7 @@ import { errorMessageResolver } from "../../utils";
 import { Button } from "@material-tailwind/react";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import logo from '../../images/bg-white.png';
 
 
 
@@ -55,39 +56,70 @@ const Login = () => {
   };
 
   return (
-    <main className="flex h-screen items-center  w-full justify-center ">
-      <div>
-        <p className=" mb-1">Accont Login</p>
-        <div className=" bg-white border-[3px] p-8 w-[380px] rounded-md">
-          <div className="flex justify-center">
-            <img
-              src="/mpg-logo.png"
-              className="w-auto max-h-[90px] rounded-full"
-              alt=""
-            />
+    <main className=" h-screen  ">
+      <div className="grid grid-cols-1 h-full   lg:grid-cols-3">
+        <div className="flex flex-col h-screen items-center justify-around   ">
+
+          <div className="">
+
+            <div>
+              <div className=" flex items-center justify-center text-4xl font-[600]">
+                <span>MPG Payment</span>
+              </div>
+
+              <div className="flex justify-center">
+                <img
+                  src={logo}
+                  className="w-auto max-h-[190px]  rounded-full"
+                  alt=""
+                />
+              </div>
+            </div>
+
           </div>
-          <form className=" gap-6" onSubmit={handleSubmit(onSubmit)}>
-            <InputField
-              message={errors.email?.message}
-              label="Email"
-              placeholder="Enter your username"
-              className="w-96  "
-              name={"email"}
-              control={control}
-            />
-            <InputField
-              label="Password"
-              message={errors.password?.message}
-              placeholder="Enter your password"
-              className="w-96  border-grey border-[1px]"
-              password
-              name={"password"}
-              control={control}
-            />
-            <Button disabled={loading} type={"submit"} placeholder={"button"} className="bg-[#3a86ff] mt-2 w-full ">
-              Sign In
-            </Button>
-          </form>
+          <div className=" bg-white shadow-lg p-8 w-[380px] cursor-pointer rounded-md">
+            <div className="flex justify-center">
+
+              <p className=" mb-1 text-lg font-bold">Merchant Login</p>
+            </div>
+            <form className=" gap-6" onSubmit={handleSubmit(onSubmit)}>
+              <InputField
+                message={errors.email?.message} 
+                label="Email"
+                placeholder="Enter your username"
+                className="w-96  "
+                name={"email"}
+                control={control}
+              />
+              <InputField
+                label="Password"
+                message={errors.password?.message}
+                placeholder="Enter your password"
+                className="w-96  border-grey border-[1px]"
+                password
+                name={"password"}
+                control={control}
+              />
+              <Button
+                disabled={loading}
+                type={"submit"}
+                placeholder={"button"}
+                className="bg-[#3a86ff] mt-2 w-full "
+              >
+                Sign In
+              </Button>
+            </form>
+          </div>
+
+        </div>
+        <div className="h-screen   lg:col-span-2 bg-[url('/woman.jpg')] bg-cover img-bg">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </main>
