@@ -2,8 +2,8 @@ import { Button } from "@material-tailwind/react";
 import Pagination from "$components/pagination";
 import { useMemoryClick, usePaginate } from "$myhooks";
 import ArrowDown from "$Icons/arrow";
-import { useCallback, useMemo, useRef } from "react";
-import bg from "../../images/mpg-logo.png";
+import {  useMemo, useRef } from "react";
+// import bg from "../../images/mpg-logo.png";
 import { useSize } from "ahooks";
 import SmallLoader from "$Icons/smallLoader";
 
