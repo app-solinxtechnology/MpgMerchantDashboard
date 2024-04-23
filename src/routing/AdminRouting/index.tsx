@@ -1,6 +1,5 @@
 import { useRoutes, Navigate, Outlet } from "react-router-dom";
 import {
-  AdminPage,
   CashInDailyPage,
   CashInMonthlyPage,
   CashInYearPage,
@@ -16,17 +15,11 @@ import {
   DetailCashOutDailyPage,
   DetailCashOutMonthlyPage,
   DetailCashOutYearlyPage,
-  FaqPage,
-  FeePage,
   LoginPage,
   MerchantPage,
   MonthlyIncomePage,
   PackagePage,
-  PaymentMethodPage,
-  PermissionPage,
-  PrivacyPage,
-  TutroialPage,
-  UserListPage,
+
   YearlyIncomePage,
 } from "../Element";
 import React from "react";
