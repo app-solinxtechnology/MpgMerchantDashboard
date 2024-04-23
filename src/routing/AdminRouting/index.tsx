@@ -51,15 +51,15 @@ export const routes = [
         element: <DashbaordPage />,
       },
 
-      { path: "user", element: <UserListPage /> },
-      {
-        path: "admin",
-        element: <Outlet />,
-        children: [
-          { path: "", element: <AdminPage /> },
-          { path: "permission", element: <PermissionPage /> },
-        ],
-      },
+      // { path: "user", element: <UserListPage /> },
+      // {
+      //   path: "admin",
+      //   element: <Outlet />,
+      //   children: [
+      //     { path: "", element: <AdminPage /> },
+      //     { path: "permission", element: <PermissionPage /> },
+      //   ],
+      // },
       { path: "merchant", element: <MerchantPage /> },
       {
         path: "cash-in-order",
@@ -169,26 +169,26 @@ export const routes = [
           },
         ]
       },
-      {
-        path: "fee",
-        element: <FeePage />
-      },
-      {
-        path: "tutroial",
-        element: <TutroialPage />
-      },
-      {
-        path: "payment",
-        element: <PaymentMethodPage />
-      },
-      {
-        path: "privacy",
-        element: <PrivacyPage />
-      },
-      {
-        path: "faq",
-        element: <FaqPage />
-      },
+      // {
+      //   path: "fee",
+      //   element: <FeePage />
+      // },
+      // {
+      //   path: "tutroial",
+      //   element: <TutroialPage />
+      // },
+      // {
+      //   path: "payment",
+      //   element: <PaymentMethodPage />
+      // },
+      // {
+      //   path: "privacy",
+      //   element: <PrivacyPage />
+      // },
+      // {
+      //   path: "faq",
+      //   element: <FaqPage />
+      // },
       {
         path: "package",
         element: <PackagePage />

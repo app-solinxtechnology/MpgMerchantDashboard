@@ -43,7 +43,7 @@ const IncomeYearlyList = ({loading,data}:any) => {
            control={control}
            render={({field:{onChange}})=>(
             <DatePicker
-            maxDate={moment().toDate()}
+            // maxDate={moment().toDate()}
             selected={startDate}
             onChange={(dates:any)=>{
               handleMass(dates);

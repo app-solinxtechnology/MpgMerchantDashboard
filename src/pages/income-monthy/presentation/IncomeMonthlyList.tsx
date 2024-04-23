@@ -44,7 +44,7 @@ const IncomeMonthlyList = ({loading,data}:any) => {
               render={({ field: { onChange } }) => (
                 <DatePicker
                   selected={startDate}
-                  maxDate={moment().toDate()}
+                  // maxDate={moment().toDate()}
                   onChange={(dates: any) => {
                     handleMass(dates);
                     setStartDate(dates);
