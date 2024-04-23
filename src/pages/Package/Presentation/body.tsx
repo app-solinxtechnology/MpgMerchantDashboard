@@ -28,6 +28,7 @@ const Body = ({ handleOpen }: { handleOpen: () => void }) => {
         <InputField
           className="max-w-[250px] "
           label="Search "
+          placeholder="Package name"
           name="user"
           control={control}
         />

@@ -63,10 +63,12 @@ const CashOutDailyList = ({ loading, data }: any) => {
         >
           <InputField
             className="max-w-[250px] "
-            label="Search "
+            label="Search"
             name="user"
+            placeholder="User or Merchant"
             control={control}
           />
+          
           <div className=" ">
             <p className="text-sm mb-1">Daily</p>
             <Controller
@@ -75,7 +77,7 @@ const CashOutDailyList = ({ loading, data }: any) => {
               render={({ field: { onChange } }) => (
                 <DatePicker
                   // minDate={moment().toDate()}
-                  maxDate={moment().toDate()}
+                  // maxDate={moment().toDate()}
                   selected={startDate}
                   onChange={(dates: any) => {
                     handleMass(dates);

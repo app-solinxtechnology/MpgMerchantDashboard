@@ -59,7 +59,8 @@ const CashOutDailyList = ({loading,data}:any) => {
         <form  onSubmit={handleSubmit(handleSubmitIng)} className=" flex items-center  gap-3">
           <InputField
             className="max-w-[250px] "
-            label="Search "
+            label="Search"
+            placeholder="User or Merchant"
             name="user"
             control={control}
           />
@@ -71,7 +72,6 @@ const CashOutDailyList = ({loading,data}:any) => {
               render={({ field: { onChange } }) => (
                 <DatePicker
                   // minDate={moment().toDate()}
-                  maxDate={moment().toDate()}
                   selected={startDate}
                   onChange={(dates: any) => {
                     handleMass(dates);

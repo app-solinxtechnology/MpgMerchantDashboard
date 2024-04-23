@@ -73,6 +73,7 @@ const CashOutMonthlyList = ({loading,data}:any) => {
       <div className="flex justify-between items-center mb-3">
         <form onSubmit={handleSubmit(submitHandler)} className=" flex items-center  gap-3">
           <InputField
+            placeholder="User or Merchant"
             className="max-w-[250px] "
             label="Search"
             name="user"
@@ -86,7 +87,7 @@ const CashOutMonthlyList = ({loading,data}:any) => {
               render={({ field: { onChange } }) => (
                 <DatePicker
                   selected={startDate}
-                  maxDate={moment().toDate()}
+                  // maxDate={moment().toDate()}
                   onChange={(dates: any) => {
                     handleMass(dates);
                     setStartDate(dates);

@@ -75,6 +75,7 @@ const CashInYearList = ({data,loading}:any) => {
       <div className="flex justify-between items-center mb-3">
         <form onSubmit={handleSubmit(submitHandler)} className=" flex items-center  gap-3">
           <InputField
+            placeholder="User or Merchant"
             className="max-w-[250px] "
             label="Search"
             name="user"
@@ -87,7 +88,7 @@ const CashInYearList = ({data,loading}:any) => {
            control={control}
            render={({field:{onChange}})=>(
             <DatePicker
-            maxDate={moment().toDate()}
+            // maxDate={moment().toDate()}
             selected={startDate}
             onChange={(dates:any)=>{
               handleMass(dates);

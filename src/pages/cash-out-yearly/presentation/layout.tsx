@@ -6,9 +6,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import CashOutYearList from "./CashInYearList"
 
 
-
-
 const Layout = () => {
+
   const query = useQuery();
   const page = query.get("page")!;
   const limit = query.get("limit")!;
@@ -23,7 +22,6 @@ const Layout = () => {
   useMountOnce(() => {
     const daily = moment(new Date()).format("YYYY");
     navigate(location.pathname + "?date=" + daily);
-
     runAsync({ year: daily, limit: limit ? limit : "5" });
   });
 

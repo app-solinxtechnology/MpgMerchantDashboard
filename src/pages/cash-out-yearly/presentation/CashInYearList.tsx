@@ -4,7 +4,6 @@ import { Controller, FieldValues, useForm } from "react-hook-form";
 import { useMemoryClick, useQuery } from "$myhooks";
 import { useCallback } from "react";
 import Create from "./Create";
-
 import { useState } from "react";
 //@ts-ignore
 import DatePicker from "react-datepicker";
@@ -76,6 +75,7 @@ const query = useQuery();
             className="max-w-[250px] "
             label="Search"
             name="user"
+            placeholder="User or Merchant"
             control={control}
           />
             <div>
@@ -85,7 +85,7 @@ const query = useQuery();
            control={control}
            render={({field:{onChange}})=>(
             <DatePicker
-            maxDate={moment().toDate()}
+            // maxDate={moment().toDate()}
             selected={startDate}
             onChange={(dates:any)=>{
               handleMass(dates);

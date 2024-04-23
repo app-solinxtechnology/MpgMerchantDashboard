@@ -79,6 +79,7 @@ const CashInMonthlyList = (props: { loading: boolean; data: any }) => {
             className="max-w-[250px] "
             label="Search"
             name="user"
+            placeholder="User or Merchant"
             control={control}
           />
           <div className="">
@@ -88,7 +89,7 @@ const CashInMonthlyList = (props: { loading: boolean; data: any }) => {
               control={control}
               render={({ field: { onChange } }) => (
                 <DatePicker
-                  maxDate={moment().toDate()}
+                  // maxDate={moment().toDate()}
                   selected={startDate}
                   onChange={(dates: any) => {
                     handleMass(dates);

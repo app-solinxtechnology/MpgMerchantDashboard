@@ -70,14 +70,14 @@ export const buyMonthly = (params: {
   q?: string;
   page?: string;
   month?: string;
-}) => api.get<AxiosResponse>("/merchant/report/buy_daily", { params });
+}) => api.get<AxiosResponse>("/merchant/report/buy_monthly", { params });
 
 export const buyYearly = (params: {
   limit?: string;
   q?: string;
   page?: string;
   year?: string;
-}) => api.get<AxiosResponse>("/merchant/report/buy_monthly", { params });
+}) => api.get<AxiosResponse>("/merchant/report/buy_yearly", { params });
 
 export const sellDaily = (params: {
   limit?: string;
