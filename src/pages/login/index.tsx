@@ -67,16 +67,17 @@ const Login = () => {
                 <span>MPG Payment</span>
               </div>
 
-              <div className="flex justify-center">
-                <img
-                  src={logo}
-                  className="w-auto max-h-[190px]  rounded-full"
-                  alt=""
-                />
-              </div>
+           
             </div>
 
           </div>
+          <div className="flex justify-center">
+                <img
+                  src={logo}
+                  className="w-auto max-h-[210px]  rounded-full"
+                  alt=""
+                />
+              </div>
           <div className=" bg-white shadow-lg p-8 w-[380px] cursor-pointer rounded-md">
             <div className="flex justify-center">
 
