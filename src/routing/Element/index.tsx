@@ -72,5 +72,7 @@ export const FaqPage = Loadable(lazy(() => import("../../pages/faq")));
 
 export const PackagePage = Loadable(lazy(() => import("../../pages/Package")));
 
+export const CustomerPage =Loadable(lazy(() => import("../../pages/customer")));
+
 
 

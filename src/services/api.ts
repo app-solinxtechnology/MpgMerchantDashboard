@@ -126,3 +126,11 @@ export const countTotalApi = () =>
 
 export const merchantProfile = () =>
   api.get<AxiosResponse>("/merchant/profile");
+
+export const merchantUserListApi = (params:{
+  page?:string
+  limit?:string
+  q?:string
+})=>api.get<AxiosResponse>('/merchant/users',{params});
+
+

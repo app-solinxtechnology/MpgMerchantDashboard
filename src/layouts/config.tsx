@@ -5,6 +5,7 @@ import Day from "$Icons/day";
 import Home from "$Icons/home";
 import Income from "$Icons/income";
 import Time from "$Icons/time";
+import User from "$Icons/user";
 import Year from "$Icons/year";
 
 export const navConfig: any = [
@@ -13,13 +14,16 @@ export const navConfig: any = [
     icon: <Home width={22} height={22} />,
     link: "/dashboard",
   },
-
   {
     title: "Package",
     icon: <Package width={22} height={22}/>,
     link: "/dashboard/package",
   },
-
+  {
+    title: "Customer",
+    icon: <User width={22} height={22}/>,
+    link: "/dashboard/customer",
+  },
   {
     title: "Buy",
     icon: <CashIn width={22} height={22} />,

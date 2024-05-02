@@ -6,6 +6,7 @@ import {
   CashOutDailyPage,
   CashOutMonthlyPage,
   CashOutYearPage,
+  CustomerPage,
   DailyIncomePage,
   DashbaordPage,
   DashboardLayout,
@@ -186,6 +187,10 @@ export const routes = [
         path: "package",
         element: <PackagePage />
       },
+      {
+        path: "customer",
+        element : <CustomerPage/>,
+      }
     ],
   },
 ];

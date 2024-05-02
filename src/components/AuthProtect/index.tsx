@@ -13,7 +13,7 @@ api.interceptors.response.use(
   },
   async function (error) {
     const originalRequest = error.config;
-    if (error.response.data.code === 405 && !originalRequest._retry) {
+    if (error.response.data.code === 403 && !originalRequest._retry) {
   
       originalRequest._retry = true;
       localStorage.removeItem("merchantToken");

@@ -1,0 +1,1 @@
+import{j as a,a as d}from"./index-D48r8r3j.js";function n({children:r,open:o,size:e,handleOpen:s,className:t}){return a.jsx(a.Fragment,{children:a.jsx(d.Dialog,{className:t,open:o,handler:s,size:e,children:r,placeholder:"dashboard-modal"})})}export{n as M};
